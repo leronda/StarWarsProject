@@ -1,0 +1,134 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+.container {
+  background-image: url(img/joda.jpg);
+  box-sizing: border-box;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  position: relative;
+}
+
+ul#characterList {
+  max-width: 17%;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+ul#characterList li {
+  flex-basis: calc(50% - 20px);
+  margin-bottom: 20px;
+}
+
+ul#characterList li a {
+  display: block;
+  padding: 10px;
+  background-color: #1e1e1e;
+  color: #ffe81f;
+  font-size: 24px;
+  font-family: "Star Jedi", "Helvetica", sans-serif;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+ul#characterList li a:hover {
+  box-shadow: 0 0 5px #69e46e, 0 0 10px #69e46e, 0 0 15px #69e46e,
+    0 0 20px #69e46e, 0 0 25px #69e46e, 0 0 30px #69e46e, 0 0 35px #69e46e;
+  background-color: #69e46e;
+  font-weight: 600;
+  transform: scale(1.2);
+  text-align: center;
+}
+
+.pagination {
+  position: absolute;
+  bottom: 40px;
+  left: 45%;
+}
+
+#prevBtn,
+#nextBtn {
+  padding: 10px 30px;
+  font-size: 30px;
+  font-family: "Star Jedi", "Helvetica", sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+#prevBtn {
+  background-color: #ffe81f;
+  color: #000000;
+  text-shadow: 2px 2px #000000;
+  box-shadow: 2px 2px 0px 0px #000000;
+}
+#nextBtn {
+  background-color: #000000;
+  color: #ffe81f;
+  text-shadow: 2px 2px #f8d200;
+  box-shadow: 2px 2px 0px 0px #ffe81f;
+}
+#prevBtn:hover,
+#nextBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 5px #ffe81f, 0 0 10px #ffe81f, 0 0 15px #ffe81f,
+    0 0 20px #69e46e, 0 0 25px #69e46e, 0 0 30px #69e46e, 0 0 35px #ffe81f;
+}
+#characterInfo {
+  position: fixed;
+  z-index: 1;
+  right: 50px;
+  top: 60px;
+  overflow: auto;
+  width: 25%;
+  box-shadow: 0 0 5px #69e46e, 0 0 10px #69e46e, 0 0 15px #69e46e,
+    0 0 20px #69e46e, 0 0 25px #69e46e, 0 0 30px #69e46e, 0 0 35px #69e46e;
+  background-color: #020403;
+  border-radius: 6px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 5px solid #ffc83d;
+}
+
+th,
+td {
+  border: 2px solid #ffc83d;
+  padding: 8px;
+  text-align: left;
+  text-align: inherit;
+  font-size: 20px;
+  font-family: "Rock Salt", cursive;
+  padding: 15px;
+}
+
+th {
+  color: #69e46e;
+}
+
+td {
+  color: white;
+}
+
+#characterInfo button {
+  border: 2px solid #ffc83d;
+  background-color: #ffc83d;
+  width: 100%;
+  font-family: "Press Start 2P", cursive;
+  padding: 15px;
+  font-size: 15px;
+}
+
+#characterInfo button:hover {
+  background-color: #020403;
+  color: white;
+}
